@@ -47,6 +47,7 @@
     [dateFormatter setDateFormat:@"yyyyMMddHHmmss"];
     NSString* dateString = [dateFormatter stringFromDate:[NSDate date]];
     _fullVersion = [_pulishVersion stringByAppendingFormat:@".%@", dateString];
+    NSLog(@"generateVesion");
 }
 
 - (NSString *) getMarketVer
